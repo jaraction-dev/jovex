@@ -1,0 +1,59 @@
+{
+  "name": "jovex",
+  "version": "1.0.0",
+  "description": "NodeJS job finder for teens without experience",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "start": "node ./index.js",
+    "watch": "webpack -w --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovEx-talentagency/jovex.git"
+  },
+  "keywords": [
+    "job",
+    "teens",
+    "node"
+  ],
+  "author": "jovEx team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovEx-talentagency/jovex/issues"
+  },
+  "homepage": "https://github.com/jovEx-talentagency/jovex#readme",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^5.3.1",
+    "handlebars": "^4.7.7",
+    "mongoose": "^5.13.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.1.0",
+    "sweetalert2": "^11.0.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.9",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
